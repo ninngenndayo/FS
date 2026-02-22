@@ -28,7 +28,7 @@ _You **can** combine them_
     1. Item 3a
     2. Item 3b
 
-![This is an alt text.](https://github.com/ninngenndayo/FS/img/kawaii.png "This is a sample image.") 
+![This is an alt text.](https://raw.githubusercontent.com/ninngenndayo/FS/refs/heads/main/img/kawaii.png "This is a sample image.") 
 
 You may be using [Markdown Live Preview](https://github.com/ninngenndayo/FS/).
 
