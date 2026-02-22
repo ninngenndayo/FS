@@ -30,7 +30,7 @@ _You **can** combine them_
 
 ![This is an alt text.](https://raw.githubusercontent.com/ninngenndayo/FS/refs/heads/main/img/kawaii.png "This is a sample image.") 
 
-You may be using [Markdown Live Preview](https://github.com/ninngenndayo/FS/).
+You may be using [This repoditory](https://github.com/ninngenndayo/FS/).
 
 ## Blockquotes
 
