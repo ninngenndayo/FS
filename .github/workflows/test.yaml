@@ -1,0 +1,14 @@
+name: Run custom BAT file
+
+on: [push, workflow_dispatch]
+
+jobs:
+  run-bat:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4   # リポジトリをチェックアウト（.batファイルを取るため）
+
+      - name: hello.bat を実行
+        shell: cmd
+        run: tests/bat/test.bat
