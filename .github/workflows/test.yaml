@@ -1,14 +1,25 @@
-name: Run custom BAT file
+name: CI / Deploy / Whatever
 
-on: [push, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
-  run-bat:
-    runs-on: windows-latest
-
+  run:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4   # リポジトリをチェックアウト（.batファイルを取るため）
+      - uses: actions/checkout@v4
 
-      - name: hello.bat を実行
-        shell: cmd
-        run: tests/bat/test.bat
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run main workflow
+        run: python test/py/workflow.py
