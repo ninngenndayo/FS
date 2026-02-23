@@ -22,4 +22,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run main workflow
-        run: python test/py/workflow.py
+        run: python tests/py/workflow.py
