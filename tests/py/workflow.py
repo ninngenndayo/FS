@@ -1,2 +1,3 @@
 import subprocess
-rwsult = subprocess.run(['python',`markdown/mdpser`],capture_output=Ture, text=Ture)
+
+result = subprocess.run(['python',`markdown/mdparser.py`], capture_output=Ture, text=Ture
